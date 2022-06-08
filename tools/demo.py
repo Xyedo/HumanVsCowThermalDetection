@@ -165,7 +165,7 @@ class Predictor(object):
             logger.info("Infer time: {:.4f}s".format(time.time() - t0))
         return outputs, img_info
 
-    def visual(self, output, img_info, cls_conf=0.35):
+    def visual(self, output, img_info, cls_conf=0.5):
         ratio = img_info["ratio"]
         img = img_info["raw_img"]
         if output is None:
